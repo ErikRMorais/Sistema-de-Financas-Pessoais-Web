@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Finanças Pessoais</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <main class="centralizar">
+        <form>
+            <h1><i class="fas fa-sign-in-alt"></i> Login</h1>
+            
+            <div class="input-container">
+                <i class="fas fa-envelope"></i>
+                <input type="email" id="email" name="email" onchange="onChangeEmail()" placeholder="Email" required>
+                <div class="erro" id="email-required-erro">Email obrigatório!</div>
+                <div class="erro" id="email-invalid-erro">Email inválido!</div>
+            </div>
+            
+            <div class="input-container">
+                <i class="fas fa-lock"></i>
+                <input type="password" id="senha" onchange="onChangePassword()" name="senha" placeholder="Senha" required>
+                <div class="erro" id="password-required-erro">Senha obrigatória!</div>
+            </div>
+            
+            <button type="button" disabled id="login-button" onclick="login()" class="solid">
+                <i class="fas fa-sign-in-alt"></i> Entrar
+            </button>
+            
+            <div class="login-options">
+                <button type="button" class="register" onclick="register()">
+                    <i class="fas fa-user-plus"></i> Criar conta
+                </button>
+                <button type="button" disabled id="recover-password-button" onclick="recoverPassword()" class="clear">
+                    <i class="fas fa-key"></i> Recuperar senha
+                </button>
+            </div>
+        </form>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://www.gstatic.com/firebasejs/11.5.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/11.5.0/firebase-auth-compat.js"></script>
+    <script src="firebase-init.js"></script>
+    <script src="loading.js"></script>
+    <script src="validations.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>

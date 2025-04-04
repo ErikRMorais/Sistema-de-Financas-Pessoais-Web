@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+</head>
+<body>
+    <form action="">
+        <h1>Cadastro</h1>
+        <div class="input-container">
+            <i class="fa-solid fa-user"></i>
+            <input type="text" id="name" name="name" onchange="onChangeName()" placeholder="Nome" required>
+            <div class="erro" id="name-required-erro" >Nome obrigatorio!</div>
+        </div>
+        <div class="input-container">
+            <i class="fa-solid fa-envelope"></i>
+            <input type="email" id="email" name="email" onchange="onChangeEmail()" placeholder="Email" required>
+            <div class="erro" id="email-required-erro" >Email obrigatorio!</div>
+            <div class="erro"id="email-invalid-erro" >Email inválido!</div>
+        </div>
+        <div class="input-container">
+            <i class="fa-solid fa-lock"></i>
+            <input type="password" id="senha" onchange="onChangePassword()" name="senha" placeholder="Senha"  required>
+            <div class="erro" id="password-required-erro" >Senha obrigatoria!</div>
+            <div class="erro" id="password-min-erro" >Senha deve ter no minimo 6 caracteres!</div>
+        </div>
+        <div class="input-container">
+            <i class="fa-solid fa-lock"></i>
+            <input type="password" id="confirm-senha" onchange="onChangeConfirmPassword()" name="confirm-senha" placeholder="Confirmar senha"  required>
+            <div class="erro" id="confirm-password-does-not-match-erro" >Senhas não conferem!</div>
+        </div>
+        <button type="button" disabled="true" id="register-button" onclick="register()" class="register">Cadastrar</button>
+        <button type="button" class="solid" onclick="login()">Login</button>
+    </form>
+</body>
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<script src="https://www.gstatic.com/firebasejs/11.5.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/11.5.0/firebase-auth-compat.js"></script>
+<script src="firebase-init.js"></script>
+<script src="validations.js"></script>
+<script src="register.js"></script>
+<script src="loading.js"></script>
+<link rel="stylesheet" href="register.css">
+<link rel="stylesheet" href="global.css">
+
+
+</html>

@@ -1,5 +1,3 @@
-O
-
 # Projeto de Finanças Pessoais
 
 Basicamente, este é um site simples que ajuda a controlar as finanças pessoais. Você pode criar uma conta, registrar o dinheiro que entra e sai, e ver tudo listado.

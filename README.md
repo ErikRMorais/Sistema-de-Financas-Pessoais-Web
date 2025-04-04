@@ -2,7 +2,7 @@
 
    Basicamente, este é um site simples que ajuda a controlar as finanças pessoais. Você pode criar uma conta, registrar o dinheiro que entra e sai, e ver tudo listado.
 
-## O que eu usei pra fazer?
+## O que eu usei para fazer?
 
 *   **`HTML` e `CSS`:** Para montar a estrutura das páginas e deixar com uma aparência legal. O básico de qualquer site.
 *   **`JavaScript` e `jQuery`:** Para fazer as coisas funcionarem na tela – validar o que você digita nos formulários, mostrar/esconder mensagens de erro, fazer os botões funcionarem e atualizar a lista de transações sem recarregar a página inteira. `jQuery` foi escolhido por ser mais simples para mexer nos elementos da página.
@@ -10,7 +10,7 @@
     *   *Firebase Authentication:* Para contas de usuário.
     *   *Firebase Firestore:* Para guardar os dados das transações.
 
-## O que dá pra fazer no site?
+## O que dá para fazer no site?
 
 *   Criar uma conta nova ou entrar com seu email e senha.
 *   Adicionar uma nova transação (se foi grana que entrou ou saiu, a data, o valor, etc.).
